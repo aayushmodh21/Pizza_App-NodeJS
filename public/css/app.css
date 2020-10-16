@@ -40,3 +40,33 @@ nav li a:hover {
   color: #fff;
 }
 
+.btn-primary {
+  transition: all 0.3s ease-in-out;
+  background: #fe5f1e;
+}
+
+.btn-primary:hover {
+  background: #b23301;
+}
+
+.cart {
+  background: #f8f8f8;
+}
+
+.cart .amount {
+  color: #fe5f1e;
+}
+
+.login {
+  background: #f8f8f8;
+  min-height: calc(100vh - 86px);
+}
+
+.login a {
+  color: #fe5f1e;
+}
+
+.login a:hover {
+  color: #b23301;
+}
+
