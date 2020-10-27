@@ -13,6 +13,8 @@ const passport = require('passport');
 
 const app = express();
 
+const PORT = process.env.PORT || 3300;
+
 // Database Connection
 const url = 'mongodb://localhost/pizza';
 mongoose.connect(url, {
@@ -27,9 +29,6 @@ connection.once('open', () => {
 .catch(err => {
     console.log('connection failed...');
 })
-
-
-const PORT = process.env.PORT || 3300;
 
 
 // Session Store
@@ -61,6 +60,7 @@ app.use(flash());
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
+
 
 // Global Middleware
 app.use((req, res, next) => {

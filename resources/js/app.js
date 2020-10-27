@@ -1,5 +1,7 @@
 const axios = require("axios")
 const Noty = require('noty');
+const { initAdmin } = require("./admin");
+
 
 let addToCart = document.querySelectorAll('.add-to-cart')
 let cartCounter = document.querySelector('#cartCounter')
@@ -38,3 +40,14 @@ addToCart.forEach((btn) => {
         // console.log(pizza);
     })
 })
+
+
+// const alertMsg = document.querySelector('#success-alert')
+// if(alertMsg) {
+//     setTimeout(() => {
+//         alertMsg.remove()
+//     }, 2000)
+// }
+
+
+initAdmin()
